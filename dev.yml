@@ -1,0 +1,7 @@
+---
+- name: InfluxDB Development setup
+  hosts: dev
+  user: vagrant
+  sudo: true
+  roles:
+    - { role: 'palkan.influxdb', tags: ['influxdb'] }
